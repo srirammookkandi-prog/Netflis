@@ -2,25 +2,25 @@
 
 * First created my react app.
 
-   1. Step1: Open cmd in the path you want to create my-react-app
+   1. Step1: Opened cmd in the path that create my-react-app should be created.
 
-   2. Step2: Enter ***npx create my-react-app netflis***
+   2. Step2: Entered ***npx create my-react-app netflis***.
 
-   3. My react app will be created.
+   3. My react app is created.
 
-   4. Start server using **npm start**.
+   4. Started server using **npm start**.
 
 * My-react-app uses webpack as a bundler.
 
-* Delete unwanted files inside the folder and make it blank.
+* Deleted unwanted files inside the folder.
 
-* Install Tailwind.CSS inside the app.
+* Installed Tailwind.CSS inside the app.
    
-    1. Step 1 : Enter ***npm install -D tailwindcss@3 postcss autoprefixer*** in terminal.
+    1. Step 1 : Entered ***npm install -D tailwindcss@3 postcss autoprefixer*** in terminal.
 
-    2. Step 2 : Enter ***npx tailwindcss init -p*** and the config file will be created.
+    2. Step 2 : Entered ***npx tailwindcss init -p*** and the config was created.
 
-    3. Step 3 : Replace config file content with the following content.
+    3. Step 3 : Replaced config file's content with the following content.
      
       ```
       /** @type {import('tailwindcss').Config} */
@@ -35,7 +35,7 @@
         }; 
       ```
     
-     4. Step 4: Update in index.css
+     4. Step 4: Updated the index.css
 
       ```
       @tailwind base;
@@ -43,7 +43,7 @@
       @tailwind utilities;
       ```
 
-    5. Step 5: Test whether tailwind is working.
+    5. Step 5: Tested whether tailwind is working.
 
 * Features to Build.
       
@@ -68,11 +68,12 @@
      - Search Bar
      - Movie Suggestion
 
-* Initialize Github Repository
+* Initialized Github Repository
   
-  - Create Github Repository.
-  - Push Code to repository.
-     
+  - Created Github Repository.
+  - Pushed Code to repository.
+  - Created Integration branch.
+  - Created features branch.   
 
 
 
