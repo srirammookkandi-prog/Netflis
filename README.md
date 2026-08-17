@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# DAY-1 Setting up my-react-app.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* First created my react app.
 
-## Available Scripts
+   1. Step1: Open cmd in the path you want to create my-react-app
 
-In the project directory, you can run:
+   2. Step2: Enter ***npx create my-react-app netflis***
 
-### `npm start`
+   3. My react app will be created.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   4. Start server using **npm start**.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* My-react-app uses webpack as a bundler.
 
-### `npm test`
+* Delete unwanted files inside the folder and make it blank.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Install Tailwind.CSS inside the app.
+   
+    1. Step 1 : Enter ***npm install -D tailwindcss@3 postcss autoprefixer*** in terminal.
 
-### `npm run build`
+    2. Step 2 : Enter ***npx tailwindcss init -p*** and the config file will be created.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    3. Step 3 : Replace config file content with the following content.
+     
+      ```
+      /** @type {import('tailwindcss').Config} */
+      module.exports = {
+        content: [
+           "./src/**/*.{js,jsx,ts,tsx}",
+              ],
+        theme: {
+           extend: {},
+        },
+        plugins: [],
+        }; 
+      ```
+    
+     4. Step 4: Update in index.css
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+      ```
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+      ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    5. Step 5: Test whether tailwind is working.
 
-### `npm run eject`
+* Features to Build.
+      
+  - Login/Signup
+     
+     - Sign In / Sign Up Form.
+     - Redirect to browse Page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  - Browse (after Authenthication )
+     
+     - Header
+     - Main Movie
+        - Trailer in Background
+        - Description
+     - Movie Suggestion List
+        - Movie List
+        - Top 10 movies
+        - Best action Movies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - Netflis GPT
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+     - Search Bar
+     - Movie Suggestion
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Initialize Github Repository
+  
+  - Create Github Repository.
+  - Push Code to repository.
+     
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
