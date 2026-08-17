@@ -1,11 +1,7 @@
-import './App.css';
+import Body from "./components/home/Body";
 
 function App() {
-  return (
-    <div className="text-xl font-bold">
-      vanakkam da mapla
-    </div>
-  );
+  return <Body/>;
 }
 
 export default App;

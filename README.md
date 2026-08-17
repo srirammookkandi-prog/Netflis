@@ -73,7 +73,17 @@
   - Created Github Repository.
   - Pushed Code to repository.
   - Created Integration branch.
-  - Created features branch.   
+  - Created features branch.
+
+* Created Folder structure.
+  
+  - Created home Folder.
+  - Created authentication Folder.
+  - Created netflis_GPT Folder.
+
+* Installed React-router Dom.
+  
+  - npm install -D react-router-dom.
 
 
 
