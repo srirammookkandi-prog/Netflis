@@ -85,6 +85,20 @@
   
   - npm install -D react-router-dom.
 
+* Created Routing for app.
+   
+   - Hash Routing because browser routing does not work in Git gh pages without SPI Fallback.
+
+* Started working on Login Page.
+
+* Created Header for Login Page. 
+    
+    - ***aria-hidden***, if true in img tag means screen readers will avoid the image content. If false, Screen readers will know that a image is present.
+
+    - ***srcset***, if srcset is present in img tag then the webpage will take the different image resolution based on the device resolution.
+
+* Created Form for taking User Details.
+
 
 
 
