@@ -1,11 +1,9 @@
-import './App.css';
+import Body from "./components/home/Body";
+import { Provider } from "react-redux";
+import appstore from "./utils/store/appstore";
 
 function App() {
-  return (
-    <div className="text-xl font-bold">
-      vanakkam da mapla
-    </div>
-  );
+  return <Provider store={appstore}><Body /></Provider>;
 }
 
 export default App;
