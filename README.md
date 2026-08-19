@@ -99,6 +99,42 @@
 
 * Created Form for taking User Details.
 
+# DAY-2 Completing Login page.
+
+* Created Login page SignIn.
+
+* Created Login page SignUp.
+
+* For bigger forms, use formik Library.
+
+* Created ***Validate*** file for checking valid name, email, password.
+
+* ***Useref*** Hook is used for taking the ref of input and checking it with the validate file.
+
+* Opened Firebase for Authentication purpose.
+
+# Day-3 Completed authentication and Created redux store.
+
+* Deployed app to production in firebase.
+
+* Created user for sign up.
+
+* Implemented Login and signup logic using Firebase authentication.
+
+* Installed redux toolkit for saving the user details for later use.
+  
+  - Entered ***npm i -D @reduxjs/toolkit*** for installing redux.
+
+  - Entered ***npm i react-redux***.
+
+  - Created store, user slice and added store to the App.js
+
+* Created Home page.
+
+* Updated sign out login in Header.
+
+* Learnt use navigate and firebase till now.
+
 
 
 

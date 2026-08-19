@@ -1,9 +1,32 @@
-import React from 'react'
+import { signOut } from "firebase/auth";
+import netflis from '../../assests/netflis.png'
+import { auth } from "../../utils/firebase";
+import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { removeUser } from "../../utils/store/slice/userSlice";
 
-const Header = () => {
+const AuthHeader = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const user = useSelector(store => store.user)
+  const handleSignOut = () => {
+    signOut(auth).then(() => {
+      dispatch(removeUser);
+      navigate("/login")
+    }).catch((error) => {
+      navigate("/error")
+    });
+
+  }
   return (
-    <div>Header</div>
+    <div className='absolute px-8 py-6 bg-gradient-to-b from-black z-10 w-full flex justify-between'>
+      <img className='w-44 ' src={netflis} alt='Logo'></img>
+      {user && <div className='flex m-2'>
+        <img alt='profile' src={user?.photoURL} className='w-12 h-12'></img>
+        <button onClick={handleSignOut} className='mx-2 py-2 px-4 bg-red-600 font-bold text-white rounded-3xl'>Sign out</button>
+      </div>}
+    </div>
   )
 }
 
-export default Header
+export default AuthHeader;
