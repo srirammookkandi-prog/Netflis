@@ -1,9 +1,8 @@
-import React from 'react'
-import AuthHeader from '../home/Header'
+import Header from '../home/Header'
 
 const Browse = () => {
   return (
-    <div><AuthHeader /></div>
+    <div><Header /></div>
   )
 }
 

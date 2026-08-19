@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { removeUser } from "../../utils/store/slice/userSlice";
 
-const AuthHeader = () => {
+const Header = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const user = useSelector(store => store.user)
@@ -29,4 +29,4 @@ const AuthHeader = () => {
   )
 }
 
-export default AuthHeader;
+export default Header;
