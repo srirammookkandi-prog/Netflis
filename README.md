@@ -135,6 +135,14 @@
 
 * Learnt use navigate and firebase till now.
 
+# Day-4 Creating home page
+
+* BugFix: resolved login security.
+
+* Bugfix: Signup user profile picture update.
+
+* Created constant files.
+
 
 
 

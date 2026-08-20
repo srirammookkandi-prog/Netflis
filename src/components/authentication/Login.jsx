@@ -1,11 +1,12 @@
 import { useState, useRef } from 'react'
-import AuthHeader from './AuthHeader'
+import Header from '../home/Header'
 import { checkValidateData } from '../../utils/Validate';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../../utils/firebase"
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../../utils/store/slice/userSlice';
+import { userProfile } from '../../utils/constants';
 
 
 const Login = () => {
@@ -32,7 +33,7 @@ const Login = () => {
         .then((userCredential) => {
           const user = userCredential.user;
           updateProfile(user, {
-            displayName: name.current?.value, photoURL: "https://avatars.githubusercontent.com/u/260084791?v=4"
+            displayName: name.current?.value, photoURL: userProfile
           }).then(() => {
             const { uid, email, displayName, photoURL } = auth.currentUser;
             dispatch(addUser({ uid: uid, email: email, displayName: displayName, photoURL: photoURL }))
@@ -64,7 +65,7 @@ const Login = () => {
 
   return (
     <div>
-      <AuthHeader />
+      <Header />
       <div className='absolute'>
         <img src="https://assets.nflxext.com/ffe/siteui/vlv3/ea534f76-b87f-4720-9605-cb29cfd9fefe/web/IN-en-20260810-TRIFECTA-perspective_5a83c581-2878-466b-87a0-19d0bf50f4bc_large.jpg" alt=""></img>
       </div>

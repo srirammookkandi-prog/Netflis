@@ -1,9 +1,10 @@
-import { signOut } from "firebase/auth";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 import netflis from '../../assests/netflis.png'
 import { auth } from "../../utils/firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { removeUser } from "../../utils/store/slice/userSlice";
+import { addUser, removeUser } from "../../utils/store/slice/userSlice";
+import { useEffect } from "react";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -18,6 +19,19 @@ const Header = () => {
     });
 
   }
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        const { uid, email, displayName, photoURL } = user;
+        dispatch(addUser({ uid: uid, email: email, displayName: displayName, photoURL: photoURL }));
+        navigate("/home")
+      } else {
+        dispatch(removeUser());
+        navigate("/login")
+      }
+    });
+    return () => unsubscribe();
+  }, [])
   return (
     <div className='absolute px-8 py-6 bg-gradient-to-b from-black z-10 w-full flex justify-between'>
       <img className='w-44 ' src={netflis} alt='Logo'></img>
