@@ -1,7 +1,7 @@
-import Header from '../home/Header'
+import Header from './Header'
 import useNowplayingMovies from "../../utils/customHooks/useNowplayingMovies"
 import MainContainer from '../home/MainContainer';
-import SecondaryContainer from '../home/SecondaryContainer';
+import SecondaryContainer from './secondaryContainer/SecondaryContainer';
 
 const Browse = () => {
 
