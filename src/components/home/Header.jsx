@@ -33,11 +33,12 @@ const Header = () => {
     return () => unsubscribe();
   }, [])
   return (
-    <div className='absolute px-8 py-6 bg-gradient-to-b from-black z-10 w-full flex justify-between'>
+    <div className='absolute px-6 py-6 bg-gradient-to-b from-black z-10 w-full flex justify-between'>
       <img className='w-44 ' src={netflis} alt='Logo'></img>
       {user && <div className='flex m-2'>
-        <img alt='profile' src={user?.photoURL} className='w-12 h-12'></img>
-        <button onClick={handleSignOut} className='mx-2 py-2 px-4 bg-red-600 font-bold text-white rounded-3xl'>Sign out</button>
+        <button className='mx-4 px-4 bg-red-600 font-bold text-white rounded-3xl'>AI Suggestion</button>
+        <img alt='profile' src={user?.photoURL} className='w-10 h-10 mx-2'></img>
+        <button onClick={handleSignOut} className='mx-4 px-4 bg-red-600 font-bold text-white rounded-3xl'>Sign out</button>
       </div>}
     </div>
   )

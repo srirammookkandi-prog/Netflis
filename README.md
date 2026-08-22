@@ -143,6 +143,28 @@
 
 * Created constant files.
 
+* Segregated Main and secondary container in browse page
+
+* Divided main container into VideoTitle and VideoBackground.
+
+* Video Background used id from store to play video from you tube.
+
+* Video Title modified as per netflix.
+
+# Day-5 Creating Secondary container.
+
+* Created movielist and movieCard from secondary container.
+
+* Created movieslice for adding category data.
+
+* Created custom hooks for fetching data.
+
+* Mapped the category data in secondary container and passing it as props.
+
+# Day-6 Creating GPT Suggestion.
+
+* 
+
 
 
 
