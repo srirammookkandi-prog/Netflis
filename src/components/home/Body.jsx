@@ -1,6 +1,6 @@
 import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Login from '../authentication/Login';
-import Browse from '../netflis_GPT/Browse';
+import Browse from '../home/Browse';
 
 const Body = () => {
 
