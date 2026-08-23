@@ -14,6 +14,7 @@ const VideoBackground = ({ movieId }) => {
                 allow="accelerometer; autoplay-repeat; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen></iframe>
+            <div className="absolute inset-0 z-5 bg-gradient-to-b from-black via-transparent to-black pointer-events-none"></div>
         </div>
     )
 }

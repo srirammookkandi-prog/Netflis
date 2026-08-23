@@ -78,6 +78,8 @@
 * Created Folder structure.
   
   - Created home Folder.
+      - Primary Container
+      - Secondary Container
   - Created authentication Folder.
   - Created netflis_GPT Folder.
 
@@ -163,7 +165,17 @@
 
 # Day-6 Creating GPT Suggestion.
 
-* 
+* Created a AI suggestion button on the header.
+
+* On click the button helps to navigate to gpt section.
+
+* Created gpt search Slice on the store and created toggle feature.
+
+* In search page, two section is created.
+     - Gpt search bar
+     - Gpt Movie suggestions.
+
+
 
 
 
