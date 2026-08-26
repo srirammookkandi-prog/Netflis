@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const MovieCard = ({ posterPath }) => {
     return (
         <div className="w-48 px-2 duration-300 ease-in-out hover:scale-110 ">
-            <Link> <img alt='moviecard' src={CDN_IMG_URL + posterPath}></img></Link>
+            <img alt='moviecard' src={CDN_IMG_URL + posterPath}></img>
         </div>
     )
 }
