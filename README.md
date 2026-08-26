@@ -85,7 +85,7 @@
 
 * Installed React-router Dom.
   
-  - npm install -D react-router-dom.
+  - npm install -D react-router-dom
 
 * Created Routing for app.
    
